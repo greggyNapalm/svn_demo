@@ -1,6 +1,7 @@
 SVN helper: tool to help with SVN routain
 =========================================
 
+
 Installation
 ------------
 
@@ -13,9 +14,12 @@ Example
 
 .. code-block:: bash
 
+    echo 'Checkout revision from server'
     $ ./helper.py --cfg=helper.cfg co
     Working copy path: mytestproj
 
+
+    echo 'Clean extra files, rever changes switch to revision'
     $ touch mytestproj/extra-file
     $ mkdir mytestproj/extra-folder
     $ echo 'foo' >> mytestproj/README
