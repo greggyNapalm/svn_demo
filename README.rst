@@ -1,0 +1,42 @@
+SVN helper: tool to help with SVN routain
+=========================================
+
+Installation
+------------
+Use pip and `vurtualev/virtualenvwrapper <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
+
+from GitHub
+
+.. code-block:: bash
+
+    pip install -e git+git://github.com/greggyNapalm/ammo.git#egg=ammo
+
+Example
+-------
+
+.. code-block:: bash
+
+    $ ./helper.py --cfg=helper.cfg co
+    Working copy path: mytestproj
+
+    $ touch mytestproj/extra-file
+    $ mkdir mytestproj/extra-folder
+    $ echo 'foo' >> mytestproj/README
+
+    $ $ ./helper.py clean
+    Working copy path: mytestproj
+    The following untracked working tree files would be removed:
+        * mytestproj/extra-file
+        * mytestproj/extra-folder
+    The following untracked working tree files would be rolled back:
+        * mytestproj/README
+    
+    Continue (y/n)y
+
+ 
+Requirements
+------------
+
+* CentOS release 5.10 (Final)
+* svn, version 1.6.11 (r934486)
+* Python 2.6.8
