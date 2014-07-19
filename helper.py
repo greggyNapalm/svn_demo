@@ -5,7 +5,7 @@
   svn_helper --version
 
 Arguments:
-  ACTION                co - to checkuot.
+  ACTION                co - to checkuot, clean - to revert answ switch.
 
 Options:
   --version             Show version and exit.

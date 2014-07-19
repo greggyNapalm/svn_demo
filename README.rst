@@ -3,13 +3,10 @@ SVN helper: tool to help with SVN routain
 
 Installation
 ------------
-Use pip and `vurtualev/virtualenvwrapper <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
 
-from GitHub
-
-.. code-block:: bash
-
-    pip install -e git+git://github.com/greggyNapalm/ammo.git#egg=ammo
+* Use pip and `vurtualev/virtualenvwrapper <http://docs.python-guide.org/en/latest/dev/virtualenvs/>`_
+* install requirements.txt
+* just run helper.py
 
 Example
 -------
@@ -23,7 +20,7 @@ Example
     $ mkdir mytestproj/extra-folder
     $ echo 'foo' >> mytestproj/README
 
-    $ $ ./helper.py clean
+    $ ./helper.py clean
     Working copy path: mytestproj
     The following untracked working tree files would be removed:
         * mytestproj/extra-file
